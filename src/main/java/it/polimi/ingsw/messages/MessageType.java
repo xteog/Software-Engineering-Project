@@ -1,0 +1,27 @@
+package it.polimi.ingsw.messages;
+
+public enum MessageType {
+    STATE_UPD,
+    LOGIN_REQUEST,
+    LOGIN_RESPONSE,
+    LOGIN_SUCCESS,
+    LOGIN_FAILURE,
+    JOIN,
+    LOBBIES_LIST,
+    JOIN_LOBBY,
+    CREATE,
+    JOIN_SUCCEED,
+    JOIN_FAILURE,
+    EXIT_LOBBY,
+    LOBBY_DATA,
+    START,
+    GAME_UPD,
+    TILES_REQUEST,
+    TILES_RESPONSE,
+    COLUMN_RESPONSE,
+    COLUMN_REQUEST,
+    STRING,
+    POINTS,
+    CHAT,
+    CHAT_MESSAGE
+}

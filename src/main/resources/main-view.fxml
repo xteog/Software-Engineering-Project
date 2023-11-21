@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0"
+            style="-fx-background-color: cbc2a7;" xmlns="http://javafx.com/javafx/19">
+    <children>
+        <Label fx:id="passwordText" layoutX="139.0" layoutY="261.0" text="Password" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="25.0"/>
+            </font>
+        </Label>
+        <Label fx:id="usernameText" layoutX="139.0" layoutY="204.0" text="Username" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="25.0"/>
+            </font>
+        </Label>
+        <Label fx:id="messageUser" alignment="CENTER" layoutX="152.0" layoutY="155.0" prefHeight="38.0"
+               prefWidth="297.0" textAlignment="CENTER" textFill="#f20000">
+            <font>
+                <Font name="System Bold" size="20.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="username" layoutX="339.0" layoutY="210.0" promptText="Username"/>
+        <PasswordField fx:id="password" layoutX="339.0" layoutY="267.0" promptText="Password"/>
+        <Button fx:id="button" layoutX="262.0" layoutY="315.0" mnemonicParsing="false" onAction="#getCredentials"
+                prefHeight="43.0" prefWidth="77.0" style="-fx-background-color: cbac56;" text="Login">
+            <font>
+                <Font size="17.0"/>
+            </font>
+        </Button>
+        <ImageView fitHeight="122.0" fitWidth="287.0" layoutX="157.0" layoutY="85.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@17_MyShelfie_BGA/Publisher%20material/Title%202000x618px.png"/>
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

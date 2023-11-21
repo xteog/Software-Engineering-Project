@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19">
+    <children>
+        <Label fx:id="inLobbyLabel" alignment="CENTER" prefHeight="72.0" prefWidth="200.0" text="Users in lobby:">
+            <font>
+                <Font size="30.0"/>
+            </font>
+        </Label>
+        <ListView fx:id="lobbyUsers" layoutY="71.0" prefHeight="200.0" prefWidth="200.0"/>
+        <TextField fx:id="chatBar" layoutX="393.0" layoutY="374.0" onAction="#writeOnChat" prefHeight="25.0"
+                   prefWidth="200.0" promptText="chat"/>
+        <ScrollPane layoutX="393.0" layoutY="5.0" prefHeight="366.0" prefWidth="200.0">
+            <content>
+                <VBox fx:id="chatBox" prefHeight="363.0" prefWidth="198.0" spacing="10.0"
+                      style="-fx-background-color: #C0C0C0;"/>
+            </content>
+        </ScrollPane>
+        <Button fx:id="startButton" layoutX="38.0" layoutY="303.0" mnemonicParsing="false" onAction="#onStart"
+                prefHeight="55.0" prefWidth="125.0" text="Start">
+            <font>
+                <Font size="26.0"/>
+            </font>
+        </Button>
+        <Label fx:id="startError" layoutX="14.0" layoutY="367.0" prefHeight="17.0" prefWidth="361.0"
+               textFill="#e80a0a"/>
+        <Button fx:id="backButton" layoutX="209.0" layoutY="303.0" mnemonicParsing="false" onAction="#onBackFromLobby"
+                prefHeight="56.0" prefWidth="125.0" text="Back">
+            <font>
+                <Font size="26.0"/>
+            </font>
+        </Button>
+        <ChoiceBox fx:id="messageDestination" layoutX="243.0" layoutY="374.0" prefHeight="0.0" prefWidth="150.0"/>
+    </children>
+</AnchorPane>
