@@ -1,4 +1,8 @@
-# Final test Software Engineering (My Shelfie)
+
+
+# Final Test Software Engineering (My Shelfie)
+![Box 280x280px](https://github.com/xteog/Software-Engineering-Project/assets/72068040/6a4afcfb-268b-4190-8574-576f5c831ccc)
+
 ## Group members:
 - Gallo Matteo
 - Motta Samuele
